@@ -5,7 +5,7 @@ import { CheckIcon } from '@heroicons/react/outline'
 import toast, { Toaster } from 'react-hot-toast';
 import Head from 'next/head';
 import {BsFillLightningChargeFill} from 'react-icons/bs'
-import {RxNotionLogo} from 'react-icons/rx'
+import { TbFishHook } from "react-icons/tb";
 import Link from "next/link";
 
 export default function IndexPage() {
@@ -203,7 +203,7 @@ export default function IndexPage() {
             <div>
               <div>
               <span className="h-12 w-12 border text-2xl border-gray-300 rounded-md flex items-center justify-center">
-              <RxNotionLogo color="black"/>
+              <TbFishHook color="black"/>
                 </span>
               </div>
               <div className="mt-6">
@@ -231,7 +231,7 @@ export default function IndexPage() {
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                 height={720}
                 width={1080}
-                src={'https://images.indianexpress.com/2024/01/UPI-file-photo.jpg'}
+                src={'https://cdn.statically.io/img/i.imgur.com/swiO0WC.jpeg'}
                 alt="Customer profile user interface"
               />
             </div>
