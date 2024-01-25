@@ -14,7 +14,7 @@ function Step2() {
                 setActiveStep(null),
                 completeSteps(2, 'upi')
             )} className='flex-[0.15] text-sm bg-black text-white rounded-lg px-2 py-2 mx-2'>Mark Done</button></h1>
-            <p>You've gathered the evidence, now it&apos;s time to sound the alarm! Filing a cybercrime report puts the pressure on the scammers and gets your case officially started. Here&apos;s how to do it in India:</p>
+            <p>You&apos;ve gathered the evidence, now it&apos;s time to sound the alarm! Filing a cybercrime report puts the pressure on the scammers and gets your case officially started. Here&apos;s how to do it in India:</p>
             <h2 className='mt-5 font-bold'>Option 1: National Cybercrime Portal (Quickest)</h2>
             <p>This user-friendly website lets you report scams related to UPI, banking, social media, and more. Visit <a href="https://cybercrime.gov.in/">cybercrime.gov.in</a> and click &quot;Report Other Cybercrime&quot;.</p>
             <ul className=' list-disc mr-auto px-10 py-5'>

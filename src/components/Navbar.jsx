@@ -105,7 +105,7 @@ export default function Navbar() {
                 <Popover className="relative bg-white	">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex justify-start lg:w-0 lg:flex-1">
-                            <a href="/" className='flex items-center'>
+                            <Link href="/" className='flex items-center'>
                                 <img
                                     className=""
                                     src='/paperr-logo.svg'
@@ -113,7 +113,7 @@ export default function Navbar() {
                                     width={130}
                                     height={10}
                                 />
-                            </a>
+                            </Link>
                         </div>
                         <div className="-mr-2 -my-2 md:hidden">
                             {/* Duplicate button is commented down */}
