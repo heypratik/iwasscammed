@@ -28,7 +28,7 @@ function Step1() {
             <h2 className='mt-5 font-bold'>2. Remember the First Contact:</h2>
             <p>Think back to how the scam started. Was it a call, text, tempting link, QR code scan, or website visit? Knowing the source helps understand the scam&apos;s tricks.</p>
             <h2 className='mt-5 font-bold'>3. Decode the Bait:</h2>
-            <p>What story did the scammer spin? Did they promise easy money, a dream job, or even love? Unmasking the "hook" exposes their tricks. Write down what they said to lure you in.</p>
+            <p>What story did the scammer spin? Did they promise easy money, a dream job, or even love? Unmasking the &quot;hook&quot; exposes their tricks. Write down what they said to lure you in.</p>
             <h2 className='mt-5 font-bold'>4. Secure Digital Footprints:</h2>
             <p>Did your interaction with the scammer leave any digital traces? Websites visited, emails exchanged, or even phone recordings can be valuable clues for investigators. Keep them safe before they disappear.</p>
             <h2>Remember:</h2>

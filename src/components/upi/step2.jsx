@@ -16,10 +16,10 @@ function Step2() {
             )} className='flex-[0.15] text-sm bg-black text-white rounded-lg px-2 py-2 mx-2'>Mark Done</button></h1>
             <p>You've gathered the evidence, now it&apos;s time to sound the alarm! Filing a cybercrime report puts the pressure on the scammers and gets your case officially started. Here&apos;s how to do it in India:</p>
             <h2 className='mt-5 font-bold'>Option 1: National Cybercrime Portal (Quickest)</h2>
-            <p>This user-friendly website lets you report scams related to UPI, banking, social media, and more. Visit <a href="https://cybercrime.gov.in/">cybercrime.gov.in</a> and click "Report Other Cybercrime".</p>
+            <p>This user-friendly website lets you report scams related to UPI, banking, social media, and more. Visit <a href="https://cybercrime.gov.in/">cybercrime.gov.in</a> and click &quot;Report Other Cybercrime&quot;.</p>
             <ul className=' list-disc mr-auto px-10 py-5'>
                 <li>Register (or log in) with your phone number and create a password.</li>
-                <li>Select "UPI/Mobile Fraud" from the complaint categories.</li>
+                <li>Select &quot;UPI/Mobile Fraud&quot; from the complaint categories.</li>
                 <li>Fill in the details about the scam: date, time, amount, recipient&apos;s name, etc.</li>
                 <li>Attach screenshots or evidence files if possible.</li>
                 <li>Submit your report and keep a copy of the reference number for future reference.</li>

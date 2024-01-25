@@ -41,7 +41,7 @@ function Step2() {
             <p className='mt-5'><strong>Helpful Resources in India:</strong></p>
             <ul className=' list-disc mr-auto px-10 py-5'>
                 <li><strong>Find your bank&apos;s customer service number:</strong><span>&nbsp;Most banks in India have a dedicated toll-free helpline for credit card issues.</span><span>&nbsp;Look for numbers starting with 1800.</span><span>&nbsp;You can also find the number on your bank&apos;s website or on the back of your credit card.</span></li>
-                <li><strong>Report fraud online:</strong><span>&nbsp;Many banks in India have dedicated fraud reporting pages on their websites.</span><span>&nbsp;Look for a link labeled "Report Fraud" or "Suspicious Activity.</span><span>"</span></li>
+                <li><strong>Report fraud online:</strong><span>&nbsp;Many banks in India have dedicated fraud reporting pages on their websites.</span><span>&nbsp;Look for a link labeled &quot;Report Fraud&quot; or &quot;Suspicious Activity.</span><span>&quot;</span></li>
             </ul>
             <p><strong>Remember:</strong><span> The sooner you report the scam,</span><span> the better chance you have of protecting yourself and preventing further damage.</span><span> Don&apos;t hesitate to contact your bank,</span><span> even if you&apos;re unsure about the specifics of the scam.</span><span> They are there to help and will guide you through the process.</span></p>
             <p><span>By taking these steps and staying vigilant,</span><span> you can navigate the aftermath of a credit card scam and emerge stronger than ever.</span></p>

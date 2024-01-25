@@ -33,7 +33,7 @@ function UPI({ amountLost, scamDays }) {
                 <hr className='my-5' />
 
                 {steps && steps.map(([key, value, Component]) => (
-                    <div className={`flex flex-row my-4 relative ${checkStep(key, "upi") ? "opacity-50" : "opacity-100"}`}>
+                    <div key={key} className={`flex flex-row my-4 relative ${checkStep(key, "upi") ? "opacity-50" : "opacity-100"}`}>
                         <div className={`${checkStep(key, "upi") ? "opacity-100" : "opacity-0"}`}><hr className='my-5 absolute -bottom-1.5 right-0 w-full z-10' /></div>
                         <p className='flex-[0.2] text-base font-semibold'>Step {key} : </p>
                         <p className='flex-1 text-base font-semibold'>{value}</p>

@@ -28,75 +28,75 @@ export default function Navbar() {
 
     const router = useRouter()
 
-    const menuLinks = menu.map((menuItem) => {
-        if (menuItem.submenu.length == 0) {
-            return (
-                <a
-                    key={menuItem.id}
-                    href={`${menuItem.link}`}
-                    target={menuItem.target}
-                    rel={menuItem.rel}
-                    className="focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 main-menu-links hover:bg-gray-100 p-2 rounded-md outline-2 text-lg font-semibold text-slate-600 sm:text-base"
-                >
-                    {menuItem.name}
-                </a>
-            );
-        } else {
-            return (
-                <Popover className="relative focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 main-menu-links hover:bg-gray-100 p-2 rounded-md outline-2 text-lg font-semibold text-slate-600 sm:text-base">
-                    {({ open }) => (
-                        <>
-                            <Popover.Button
-                                className={classNames(
-                                    open ? 'text-gray-900' : 'text-gray-500',
-                                    'group rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 '
-                                )}
-                            >
-                                <span className='focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 main-menu-links hover:bg-gray-100  rounded-md outline-2 text-lg font-semibold text-slate-600 sm:text-base'>{menuItem.name}</span>
-                                <ChevronDownIcon
-                                    className={classNames(
-                                        open ? 'text-gray-600' : 'text-gray-400',
-                                        'ml-2 h-5 w-5 group-hover:text-gray-500'
-                                    )}
-                                    aria-hidden="true"
-                                />
-                            </Popover.Button>
+    // const menuLinks = menu.map((menuItem) => {
+    //     if (menuItem.submenu.length == 0) {
+    //         return (
+    //             <a
+    //                 key={menuItem.id}
+    //                 href={`${menuItem.link}`}
+    //                 target={menuItem.target}
+    //                 rel={menuItem.rel}
+    //                 className="focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 main-menu-links hover:bg-gray-100 p-2 rounded-md outline-2 text-lg font-semibold text-slate-600 sm:text-base"
+    //             >
+    //                 {menuItem.name}
+    //             </a>
+    //         );
+    //     } else {
+    //         return (
+    //             <Popover className="relative focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 main-menu-links hover:bg-gray-100 p-2 rounded-md outline-2 text-lg font-semibold text-slate-600 sm:text-base">
+    //                 {({ open }) => (
+    //                     <>
+    //                         <Popover.Button
+    //                             className={classNames(
+    //                                 open ? 'text-gray-900' : 'text-gray-500',
+    //                                 'group rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 '
+    //                             )}
+    //                         >
+    //                             <span className='focus:outline-none focus:ring-1 focus:ring-slate-400 focus:ring-offset-1 main-menu-links hover:bg-gray-100  rounded-md outline-2 text-lg font-semibold text-slate-600 sm:text-base'>{menuItem.name}</span>
+    //                             <ChevronDownIcon
+    //                                 className={classNames(
+    //                                     open ? 'text-gray-600' : 'text-gray-400',
+    //                                     'ml-2 h-5 w-5 group-hover:text-gray-500'
+    //                                 )}
+    //                                 aria-hidden="true"
+    //                             />
+    //                         </Popover.Button>
 
-                            <Transition
-                                as={Fragment}
-                                enter="transition ease-out duration-200"
-                                enterFrom="opacity-0 translate-y-1"
-                                enterTo="opacity-100 translate-y-0"
-                                leave="transition ease-in duration-150"
-                                leaveFrom="opacity-100 translate-y-0"
-                                leaveTo="opacity-0 translate-y-1"
-                            >
-                                <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform w-screen max-w-xs lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                                        <div className="relative bg-white p-2">
-                                            {menuItem.submenu.map((item) => (
-                                                <a
-                                                    key={item.id}
-                                                    href={`https://${item.clink}/`}
-                                                    target={item.ctarget}
-                                                    rel={item.crel}
-                                                    className="p-3 flex items-start rounded-lg hover:bg-gray-50"
-                                                >
-                                                    <div className="ml-4">
-                                                        <p className="text-base font-medium text-gray-900">{item.cname}</p>
-                                                    </div>
-                                                </a>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </Popover.Panel>
-                            </Transition>
-                        </>
-                    )}
-                </Popover>
-            )
-        }
-    });
+    //                         <Transition
+    //                             as={Fragment}
+    //                             enter="transition ease-out duration-200"
+    //                             enterFrom="opacity-0 translate-y-1"
+    //                             enterTo="opacity-100 translate-y-0"
+    //                             leave="transition ease-in duration-150"
+    //                             leaveFrom="opacity-100 translate-y-0"
+    //                             leaveTo="opacity-0 translate-y-1"
+    //                         >
+    //                             <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform w-screen max-w-xs lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+    //                                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+    //                                     <div className="relative bg-white p-2">
+    //                                         {menuItem.submenu.map((item) => (
+    //                                             <a
+    //                                                 key={item.id}
+    //                                                 href={`https://${item.clink}/`}
+    //                                                 target={item.ctarget}
+    //                                                 rel={item.crel}
+    //                                                 className="p-3 flex items-start rounded-lg hover:bg-gray-50"
+    //                                             >
+    //                                                 <div className="ml-4">
+    //                                                     <p className="text-base font-medium text-gray-900">{item.cname}</p>
+    //                                                 </div>
+    //                                             </a>
+    //                                         ))}
+    //                                     </div>
+    //                                 </div>
+    //                             </Popover.Panel>
+    //                         </Transition>
+    //                     </>
+    //                 )}
+    //             </Popover>
+    //         )
+    //     }
+    // });
 
     return (
         <div className="fixed z-10 w-full bg-white border-b top-0 px-10">
@@ -127,7 +127,7 @@ export default function Navbar() {
 
                         <Popover.Group as="nav" className="hidden md:flex md:ml-5 space-x-10">
 
-                            {menuLinks}
+                            {/* {menuLinks} */}
 
                         </Popover.Group>
                         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -155,16 +155,16 @@ export default function Navbar() {
                                 <div className="py-4 px-5">
 
                                     <Popover.Group as="nav" className="flex flex-col">
-                                        {menuLinks}
+                                        {/* {menuLinks} */}
                                     </Popover.Group>
 
                                     <div className="p-2 w-full">
-                                        <a
+                                        <Link
                                             href="/auth/register"
                                             className="w-full inline-flex items-center justify-center text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 disabled:pointer-events-none bg-slate-800 text-white hover:bg-slate-900 rounded-md px-6 py-3"
                                         >
                                             Get Started
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
