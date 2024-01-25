@@ -5,6 +5,7 @@ import Step3 from './upi/step3'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Message_data } from "../context/context";
+import { GiFishingHook } from "react-icons/gi";
 import { useContext } from "react";
 
 const steps = [
@@ -15,7 +16,7 @@ const steps = [
 
 function UPI({ amountLost, scamDays }) {
 
-    const { activeStep, setActiveStep, checkStep } = useContext(Message_data)
+    const { activeStep, setActiveStep, checkStep, completeSteps } = useContext(Message_data)
 
     return (
         <div className='w-full'>
@@ -39,11 +40,21 @@ function UPI({ amountLost, scamDays }) {
                         <p className='flex-1 text-base font-semibold'>{value}</p>
                         <div className='flex-[0.4] flex items-center justify-end'>
                             <button onClick={(e) => setActiveStep(`step${key}`)} className='text-sm bg-black text-white rounded-lg px-2 py-1 mx-2'>Start</button>
-                            <button className='text-sm bg-black text-white rounded-lg px-2 py-1 mx-2'>Mark Done</button>
+                            {/* <button className='text-sm bg-black text-white rounded-lg px-2 py-1 mx-2' onClick={(e) => completeSteps(key, 'upi')}>Mark Done</button> */}
                         </div>
                     </div>
                 ))}
             </div>}
+            <div className='w-full border border-red-600 rounded-md text-red-600 p-4 mt-8'>
+                <span className='flex items-center justify-start gap-3 font-bold'><GiFishingHook /> Personalized Tips:</span>
+                <ul className='list-disc list-inside text-base  ml-6 mt-4'>
+                    {amountLost === "Above Rs: 99,000" && <li>Because your amount is over 99,000, you will need to file an FIR as well as a cybercrime report. Please visit your neareast police station for both.</li>}
+                    {amountLost !== "Above Rs: 99,000" && <li>Because your amount is under 99,000, you don't need to file an FIR. You can just report online on the cybercrime portal.</li>}
+                    {scamDays === 7 && <li>Because you have reported the scam after 7 days, it might be harder to recover your money. But you should still try.</li>}
+                    {scamDays !== 7 && <li>Because you have reported the scam within 7 days, it might be easier to recover your money.</li>}
+                    <li>Report the transaction as unauthorized in banks as soon as possible. This increases your chances of banks refunding back the money back to you.</li>
+                </ul>
+            </div>
         </div>
     )
 }
