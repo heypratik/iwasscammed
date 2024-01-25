@@ -8,23 +8,6 @@ import {BsFillLightningChargeFill} from 'react-icons/bs'
 import {RxNotionLogo} from 'react-icons/rx'
 import Link from "next/link";
 
-const features = [
-  {
-    name: 'Lightning Fast & Easy Setup',
-    description: 'You can setup your blog with Paperr in under 2 mins & start writing!',
-  },
-  { name: 'Free SSL & CDN', description: 'Paperr provides free SSL and CDN services with all plans. With Paperr, all content is served through a CDN, ensuring visitors benefit from an optimized experience.' },
-  {
-    name: 'Responsive Themes',
-    description: 'All blog themes on Paperr are optimized for desktop, mobile and tablets.',
-  },
-  { name: 'No Maintainance', description: 'We worry about maintainance so you can focus on writing.' },
-  { name: 'Custom Domains', description: 'Connect your own domain or get a free subdomain from us!' },
-  { name: '99% Uptime', description: 'All blogs are hosted with Vercel which guarantees 99% uptime.' },
-  { name: 'SEO Optimized & Sitemaps', description: 'Paperr optimizes all pages and images for SEO purposes, and automatically generates sitemaps to enhance the discoverability and indexing of content.' },
-  { name: 'Free Migration Support', description: 'Want to migrate to Paperr? Contact us & we will migrate your content for free.' },
-]
-
 export default function IndexPage() {
 
   function notify(status) {
@@ -66,17 +49,14 @@ export default function IndexPage() {
     <div className="overflow-x-hidden">
     <Head>
     <link rel="icon" type="image/png" sizes="32x32" href="/paperr-favicon.svg" />
-      <title>Create beautiful blogs with Notion CMS | Paperr</title>
-      <meta name="description" content="Paperr helps you create a super fast, SEO Optimized blog using Notion as CMS. Connect your domain or get a free subdomain, SSL, and more..." />
+      <title>Report Scams & Protect Citizens | iwasscammed </title>
+      <meta name="description" content="iwasscammed helps you with the latest information on how to report scams & frauds so you can report & recover funds easily" />
       <meta name="robots" content="follow, index" />
-      <meta property="og:site_name" content="Paperr" />
-      <meta property="og:description" content="Paperr helps you create a super fast, SEO Optimized blog using Notion as CMS. Connect your domain or get a free subdomain, SSL, and more..." name="description" />
-      <meta property="og:title" content="Create beautiful blogs with Notion CMS | Paperr" />
-      <meta property="og:image" content='/Homepage.webp' />
+      <meta property="og:description" content="iwasscammed helps you with the latest information on how to report scams & frauds so you can report & recover funds easily" name="description" />
+      <meta property="og:title" content="Report Scams & Protect Citizens | iwasscammed " />
 
-      <meta name="twitter:title" content="Create beautiful blogs with Notion CMS | Paperr" />
-      <meta name="twitter:description" content="Paperr helps you create a super fast, SEO Optimized blog using Notion as CMS. Connect your domain or get a free subdomain, SSL, and more..." />
-      <meta name="twitter:image" content='/Homepage.webp' />
+      <meta name="twitter:title" content="Report Scams & Protect Citizens | iwasscammed " />
+      <meta name="twitter:description" content="iwasscammed helps you with the latest information on how to report scams & frauds so you can report & recover funds easily" />
       {/* <meta property="og:image" content={imageUrl || siteData.socialBanner} />
 
       <meta property="og:url" content={ogUrl} />
@@ -164,7 +144,7 @@ export default function IndexPage() {
 
                   <div className="flex items-center justify-center my-8">
                   <div className=" xl:w-11/12 w-full ">
-                  <img src={'https://cdn.statically.io/img/i.imgur.com/T0uXo5l.png'} width={1080} height={720} alt={'Banner Image'} />
+                  <img src={'https://cdn.statically.io/img/i.imgur.com/zTCbdcf.png'} width={1080} height={720} alt={'Banner Image'} />
                   </div>
                   </div>
             
@@ -193,7 +173,7 @@ export default function IndexPage() {
                 <div className="mt-6">
                   <Link
                     prefetch={false}
-                    href="/auth/register"
+                    href="/start"
                     className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700"
                   >
                     Report Fraud
@@ -236,10 +216,10 @@ export default function IndexPage() {
                 <div className="mt-6">
                   <Link
                     prefetch={false}
-                    href="/auth/register"
+                    href="/start"
                     className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700"
                   >
-                    Get Started
+                    Report Scam
                   </Link>
                 </div>
               </div>

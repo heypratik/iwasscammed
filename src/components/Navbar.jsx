@@ -108,9 +108,9 @@ export default function Navbar() {
                             <Link href="/" className='flex items-center'>
                                 <img
                                     className=""
-                                    src='/paperr-logo.svg'
+                                    src='https://i.imgur.com/sFsZG71.png'
                                     alt="Paperr Logo"
-                                    width={130}
+                                    width={240}
                                     height={10}
                                 />
                             </Link>
