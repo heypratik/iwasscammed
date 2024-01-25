@@ -22,6 +22,7 @@ export default function Start() {
 
           {start && selectedScam =='creditcard' && <CreditCard selectedScam={selectedScam} amountLost={amountLost} scamDays={scamDays}/>}
           {start && selectedScam =='upi' && <UPI selectedScam={selectedScam} amountLost={amountLost} scamDays={scamDays}/>}
+          {start && selectedScam =='bank' && <CreditCard selectedScam={selectedScam} amountLost={amountLost} scamDays={scamDays}/>}
 
           {!start && 
           <>
