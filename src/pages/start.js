@@ -8,7 +8,7 @@ export default function Start() {
 
     const [selectedScam, setSelectedScam] = useState(null)
     const [amountLost, setAmountLost] = useState(0)
-    const [scamDays, setScamDays] = useState(3)
+    const [scamDays, setScamDays] = useState(0)
     const [start, setStart] = useState(false)
 
     function handleNext() {
@@ -68,7 +68,7 @@ export default function Start() {
       </SelectContent>
     </Select>
 
-    <button disabled={selectedScam === null || amountLost === 0} onClick={(e) => handleNext()} className="text-white bg-black rounded-md mt-5 px-6 py-2 disabled:bg-gray-400">Next</button>
+    <button disabled={selectedScam === null || amountLost === 0 || scamDays === 0} onClick={(e) => handleNext()} className="text-white bg-black rounded-md mt-5 px-6 py-2 disabled:bg-gray-400">Next</button>
     </>}
 
     <span className="text-gray-600 text-sm flex items-center absolute bottom-3"><IoIosInformationCircleOutline className="mr-2"/> This is a informational website. We do not report the scams to authorities but we show users how they can report the scams/fraud.</span>
