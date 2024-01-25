@@ -8,19 +8,19 @@ function Step1() {
     const { activeStep, setActiveStep, completeSteps } = useContext(Message_data)
 
     return (
-        <div className='text-black px-8'>
+        <div className='text-black px-8 my-10'>
             <IoChevronBackCircleSharp onClick={(e) => setActiveStep(null)} fontSize={25} className='-mt-4 mb-2 cursor-pointer' />
-            <h2 className='text-2xl font-bold mb-5 flex items-center justify-start'>Victim to a Credit Card Scam? Act Now: <button onClick={(e) => (
+            <h1 className='text-2xl font-bold mb-5 flex items-center justify-start'>Victim to a Credit Card Scam? Act Now: <button onClick={(e) => (
                 setActiveStep(null),
                 completeSteps(1, 'cc')
-            )} className='text-sm bg-black text-white rounded-lg px-2 py-1 mx-2'>Mark Done</button></h2>
+            )} className='text-sm bg-black text-white rounded-lg px-2 py-1 mx-2'>Mark Done</button></h1>
             <p><span>Falling victim to a credit card scam can be nerve-wracking.</span><span> Before you dive into panic mode,</span><span> take a deep breath and gather your bearings.</span><span> The </span><strong>first step</strong><span> in fighting back effectively is </span><strong>collecting as much information as possible about the scam and the scammer.</strong><span> This intel will be crucial for reporting the crime,</span><span> blocking further damage,</span><span> and potentially recovering your lost funds.</span></p>
-            <p className='mt-5'><strong>Here's how to become a credit card crime sleuth:</strong></p>
+            <p className='mt-5'><strong>Here&apos;s how to become a credit card crime sleuth:</strong></p>
             <p className='mt-5'><strong>1. Identify the type of scam:</strong></p>
             <ul className=' list-disc mr-auto px-10 py-5'>
                 <li><strong>Skimming:</strong><span>&nbsp;Did your card details get copied at an ATM,</span><span>&nbsp;gas station,</span><span>&nbsp;or restaurant?</span><span>&nbsp;Look for suspicious devices attached to card readers.</span></li>
                 <li><strong>Lost or stolen card:</strong><span>&nbsp;Did you lose your card,</span><span>&nbsp;or think it may have been stolen?</span><span>&nbsp;Track back your recent movements and retrace your steps.</span></li>
-                <li><strong>Phishing:</strong><span>&nbsp;Did you receive suspicious emails or calls asking for your card details?</span><span>&nbsp;Analyze the sender's address and verify directly with your card issuer.</span></li>
+                <li><strong>Phishing:</strong><span>&nbsp;Did you receive suspicious emails or calls asking for your card details?</span><span>&nbsp;Analyze the sender&apos;s address and verify directly with your card issuer.</span></li>
                 <li><strong>Data breach:</strong><span>&nbsp;Have you recently received notifications about a data breach involving a company you store your card information with?</span><span>&nbsp;Check your credit report and monitor your statements for any unusual activity.</span></li>
             </ul>
             <p className='mt-5'><strong>2. Collect evidence:</strong></p>

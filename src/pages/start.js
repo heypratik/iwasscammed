@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "../components/ui/select.jsx"
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import CreditCard from "@/components/creditcard.jsx";
+import UPI from "@/components/upi.jsx";
 
 export default function Start() {
 
@@ -16,10 +17,11 @@ export default function Start() {
 
 
   return (
-    <div className="flex items-center justify-center bg-[#f6f6f6] w-full overflow-scroll">
-        <div className="bg-white rounded-lg w-1/2 m-h-[350px] py-20 my-20 flex items-center justify-center flex-col relative shadow-[0_3px_20px_rgb(0,0,0,0.1)]">
+    <div className="flex items-center justify-center bg-[#f6f6f6] min-h-screen w-full overflow-scroll">
+        <div className="bg-white rounded-lg w-[70%] px-20 py-20 my-20 flex items-center justify-center flex-col relative shadow-[0_3px_20px_rgb(0,0,0,0.1)]">
 
-          {start && <CreditCard selectedScam={selectedScam} amountLost={amountLost} scamDays={scamDays}/>}
+          {start && selectedScam =='creditcard' && <CreditCard selectedScam={selectedScam} amountLost={amountLost} scamDays={scamDays}/>}
+          {start && selectedScam =='upi' && <UPI selectedScam={selectedScam} amountLost={amountLost} scamDays={scamDays}/>}
 
           {!start && 
           <>
