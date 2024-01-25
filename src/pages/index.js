@@ -189,7 +189,7 @@ export default function IndexPage() {
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 width={1080}
                 height={720}
-                src={'https://cdn.statically.io/img/i.imgur.com/dK3cK1J.jpeg'}
+                src={'https://cdn.statically.io/img/i.imgur.com/O1FC1ad.jpeg'}
                 alt="Inbox user interface"
               />
             </div>
@@ -231,7 +231,7 @@ export default function IndexPage() {
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                 height={720}
                 width={1080}
-                src={'https://cdn.statically.io/img/i.imgur.com/zsFIu66.jpeg'}
+                src={'https://images.indianexpress.com/2024/01/UPI-file-photo.jpg'}
                 alt="Customer profile user interface"
               />
             </div>
