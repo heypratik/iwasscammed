@@ -1,7 +1,7 @@
 import React from 'react'
 import Step1 from './upi/step1'
 import Step2 from './upi/step2'
-// import Step3 from './upi/step3'
+import Step3 from './upi/step3'
 import Link from 'next/link'
 import { useState } from 'react'
 import { Message_data } from "../context/context";
@@ -18,10 +18,10 @@ function UPI({ amountLost, scamDays }) {
     const { activeStep, setActiveStep, checkStep } = useContext(Message_data)
 
     return (
-        <div className=''>
+        <div className='w-full'>
             {activeStep === 'step1' && <Step1 />}
             {activeStep === 'step2' && <Step2 />}
-            {/* {activeStep === 'step3' && <Step3 />} */}
+            {activeStep === 'step3' && <Step3 />}
             {activeStep === null && <div className='text-black w-full  px-8'>
 
                 <h1 className='text-3xl font-bold text-center mb-8'>Steps to Report UPI Scam</h1>

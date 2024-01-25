@@ -23,7 +23,7 @@ function CreditCard({ amountLost, scamDays }) {
     const { activeStep, setActiveStep, checkStep } = useContext(Message_data)
 
     return (
-        <div className=''>
+        <div className='w-full'>
             {activeStep === 'step1' && <Step1 />}
             {activeStep === 'step2' && <Step2 />}
             {activeStep === 'step3' && <Step3 />}
