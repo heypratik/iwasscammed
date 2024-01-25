@@ -46,7 +46,7 @@ function CreditCard({ amountLost, scamDays }) {
                         <p className='flex-1 text-base font-semibold'>{value}</p>
                         <div className='flex-[0.4] flex items-center justify-end'>
                             <button onClick={(e) => setActiveStep(`step${key}`)} className='text-sm bg-black text-white rounded-lg px-2 py-1 mx-2'>Start</button>
-                            <button className='text-sm bg-black text-white rounded-lg px-2 py-1 mx-2' onClick={(e) => completeSteps(key, 'cc')}>Mark Done</button>
+                            {/* <button className='text-sm bg-black text-white rounded-lg px-2 py-1 mx-2' onClick={(e) => completeSteps(key, 'cc')}>Mark Done</button> */}
                         </div>
                     </div>
                 ))}
