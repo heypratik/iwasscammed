@@ -55,7 +55,7 @@ function CreditCard({ amountLost, scamDays }) {
                 <span className='flex items-center justify-start gap-3 font-bold'><GiFishingHook /> Personalized Tips:</span>
                 <ul className='list-disc list-inside text-base ml-6 mt-4'>
                     {amountLost === "Above Rs: 99,000" && <li>Because your amount is over 99,000, you will need to file an FIR as well as a cybercrime report. Please visit your neareast police station for both.</li>}
-                    {amountLost !== "Above Rs: 99,000" && <li>Because your amount is under 99,000, you don't need to file an FIR. You can just report online on the cybercrime portal.</li>}
+                    {amountLost !== "Above Rs: 99,000" && <li>Because your amount is under 99,000, you don&apos;t need to file an FIR. You can just report online on the cybercrime portal.</li>}
                     {scamDays === 7 && <li>Because you have reported the scam after 7 days, it might be harder to recover your money. But you should still try.</li>}
                     {scamDays !== 7 && <li>Because you have reported the scam within 7 days, it might be easier to recover your money.</li>}
                     <li>Report the transaction as unauthorized in banks as soon as possible. This increases your chances of banks refunding back the money back to you.</li>
